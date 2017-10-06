@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+<div class="container">
+  <h1>Cadastro de Visitantes</h1>
+</div>
+
+<p>
+
+<form class="form-inline" >
+<div class="form-group">
+    <input type="email" class="form-control" id="email" placeholder="Procurar">
+  </div>
+ <div class="form-group">
+  <button type="button" class="btn btn-info">
+    <span class="glyphicon glyphicon-search"></span> Buscar
+  </button>
+  </div>
+</form>
+  
+<div class="container">
+  <h2>Informações</h2>            
+
+  <table class="table table-hover">
+    <thead>
+      <tr>
+        <th>Nome</th>
+        <th>RG / CPF</th>
+        <th>Visitando</th>
+		<th>Bloco</th>
+		<th>Apartamento</th>
+	  </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>John Green</td>
+        <td>000.000.000-00</td>
+        <td>João Cavalcante</td>
+		<th>04</th>
+		<th>11</th>
+	 </tr>
+      <tr>
+        <td>Maria Aparecida</td>
+        <td>000.000.000-00</td>
+        <td>Joana Dark</td>
+		<th>05</th>
+		<th>07</th>
+	  </tr>
+      <tr>
+        <td>Mario Almeida</td>
+        <td>000.000.000-00</td>
+        <td>William de Jesus</td>
+		<th>06</th>
+		<th>05</th>
+	 </tr>
+    </tbody>
+  </table>
+</div>
+
+<hr>
+
+
+<div class="container">
+  <h1>Cadastrar Visitantes</h1>
+</div>
+
+
+
+<form class="form-horizontal" action="/action_page_post.php" method="post">
+  <div class="form-group">
+    <label class="control-label col-sm-2" for="visitante">Visitante:</label>
+    <div class="col-sm-10">
+      <input type="text" class="form-control" id="visitante" placeholder="Digite o nome" required>
+    </div>
+  </div>
+  
+  <div class="form-group">
+    <label class="control-label col-sm-2" for="doc">RG / CPF :</label>
+    <div class="col-sm-10"> 
+      <input type="text" class="form-control" id="doc" placeholder="Digite o RG / CPF" required>
+    </div>
+  </div>
+  
+
+  <div class="form-group">
+    <label class="control-label col-sm-2" for="mrdr">Morador:</label>
+    <div class="col-sm-10"> 
+      <input type="text" class="form-control" id="mrdr" placeholder="Morador" required>
+    </div>
+  </div>
+  
+   <div class="form-group">
+    <label class="control-label col-sm-2" for="bl">Bloco :</label>
+    <div class="col-sm-10"> 
+      <input type="text" class="form-control" id="bl" placeholder="Digite Bloco" required>
+    </div>
+  </div>
+  
+   <div class="form-group">
+    <label class="control-label col-sm-2" for="Ap">Apartamento :</label>
+    <div class="col-sm-10"> 
+      <input type="text" class="form-control" id="Ap" placeholder="Digite Apartamento" required>
+    </div>
+  </div>
+  
+  <div class="btn-group"> 
+    <div class="btn-group">
+      <input  type="submit" value="Salvar" class="btn btn-success">
+    </div>
+  </div>
+ 
+ <div class="btn-group" > 
+    <div class="btn-group" >
+      <button type="button"  class="btn btn-danger">Cancelar</button>
+    </div>
+  </div>
+  
+
+ 
+ </form>
+  
+
+</body>
+</html>
